@@ -1,0 +1,67 @@
+.login-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+  background-color: white !important;
+  padding: 2rem !important;
+}
+
+.login-form-container {
+  background-color: #2C7873;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: 200px;
+  width: 100%;
+}
+
+.tagline {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.remember-me {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.login-button {
+  margin-top: 1rem;
+  background-color: white !important;
+  color: #2C7873 !important;
+  padding: 0.75rem 0 !important;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.forgot-password a {
+  color: white;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .login-form-container {
+    padding: 2rem 1.5rem;
+  }
+}

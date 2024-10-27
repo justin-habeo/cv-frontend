@@ -1,0 +1,71 @@
+{
+  "name": "s10-smartgrow-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "files": [
+    "build",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@date-io/date-fns": "^3.0.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@img-comparison-slider/react": "^8.0.2",
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
+    "@mui/x-data-grid": "^7.11.1",
+    "@mui/x-date-pickers": "^7.15.0",
+    "@react-google-maps/api": "^2.19.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "chart.js": "^4.4.3",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.13",
+    "echarts-for-react": "^3.0.2",
+    "leaflet": "^1.9.4",
+    "lodash": "^4.17.21",
+    "mapbox-gl": "^3.5.2",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-color": "^2.19.3",
+    "react-compare-image": "^3.4.0",
+    "react-dom": "^18.3.1",
+    "react-grid-layout": "^1.4.4",
+    "react-leaflet": "^4.2.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.12.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:smartgrow": "REACT_APP_BRAND=smartgrow react-scripts build",
+    "build:smartcourse": "REACT_APP_BRAND=smartcourse react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

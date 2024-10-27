@@ -1,0 +1,36 @@
+/* src/components/Dashboard/DashboardConfig.css */
+.dashboard-config-dialog .MuiDialog-paper {
+  background-color: #2C7873;
+  color: white;
+}
+
+.dashboard-config-dialog .MuiDialogTitle-root {
+  background-color: #1f5f5b;
+}
+
+.dashboard-config-dialog .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dashboard-config-dialog .MuiSelect-select {
+  color: white;
+}
+
+.dashboard-config-dialog .add-widget-button {
+  margin-top: 20px;
+  color: white;
+  border-color: white;
+}
+
+.dashboard-config-dialog .cancel-button {
+  color: white;
+}
+
+.dashboard-config-dialog .save-button {
+  background-color: white;
+  color: #2C7873;
+}
+
+.dashboard-config-dialog .save-button:hover {
+  background-color: #e0e0e0;
+}
