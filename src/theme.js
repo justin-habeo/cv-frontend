@@ -162,16 +162,33 @@ const ombriaColors = {
   hover: 'rgba(31, 58, 51, 0.08)',
 };
 
+const computerVisionColors = {
+  primary: '#1b201c',     // Light turquoise from logo
+  primaryContrast: '#7AC7D7',
+  secondary: '#A6E4E7',   // Lighter turquoise from logo
+  secondaryContrast: '#1b201c',
+  background: '#1b201c',  // Dark background as requested
+  paper: '#242926',       // Slightly lighter than background for cards/elements
+  textPrimary: '#FFFFFF', // White text for contrast
+  textSecondary: 'rgba(255, 255, 255, 0.7)',
+  active: '#7AC7D7',      // Using logo color for active states
+  hover: 'rgba(122, 199, 215, 0.08)', // Semi-transparent version of primary
+};
+
 export const darkTheme = createCustomTheme('dark', darkColors);
 export const lightTheme = createCustomTheme('light', lightColors);
 export const purpleTheme = createCustomTheme('light', purpleColors);
 export const ombriaTheme = createCustomTheme('light', ombriaColors);
+export const computerVisionTheme = createCustomTheme('dark', computerVisionColors);
 
+// Add it to the themes object
 export const themes = {
   dark: darkTheme,
   light: lightTheme,
   purple: purpleTheme,
   ombria: ombriaTheme,
-};
+  compVision: computerVisionTheme,
+}
 
-export default darkTheme;
+
+export default computerVisionTheme;
