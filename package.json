@@ -44,9 +44,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:a_eye": "REACT_APP_BRAND=a_eye react-scripts start",
     "build": "react-scripts build",
     "build:smartgrow": "REACT_APP_BRAND=smartgrow react-scripts build",
     "build:smartcourse": "REACT_APP_BRAND=smartcourse react-scripts build",
+    "build:a_eye": "REACT_APP_BRAND=a_eye react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
