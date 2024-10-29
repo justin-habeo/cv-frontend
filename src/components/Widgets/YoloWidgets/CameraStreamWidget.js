@@ -81,6 +81,16 @@ const CameraStreamWidget = ({ config, showHeader = true }) => {
                         detections: data.data.detections?.length,
                         zones: data.data.zones?.length  // Log zone count
                     });
+                    console.log('Frame update details xtra:', {
+                        frameNumber: data.data.frame_number,
+                        fps: data.data.fps,
+                        detectionsCount: data.data.detections?.length || 0,
+                        zonesCount: data.data.zones?.length || 0,
+                        // Log first detection if exists
+                        sampleDetection: data.data.detections?.[0],
+                        // Log first zone if exists
+                        sampleZone: data.data.zones?.[0]
+                    });
                     updateCanvas(data.data);
                     if (data.data.fps) {
                         setStatus(`Connected (${data.data.fps.toFixed(1)} FPS)`);
