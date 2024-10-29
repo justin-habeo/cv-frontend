@@ -11,7 +11,15 @@ const PeopleCounterWidget = ({ config, showHeader = true }) => {
   const wsRef = useRef(null);
 
   useEffect(() => {
-    const ws = new WebSocket(`ws://your-backend/ws/cv/zone/${config.zoneId}/`);
+  
+          // Setup WebSocket URL
+    const wsHost = process.env.REACT_APP_WS_HOST || window.location.hostname || 'localhost';
+    const wsPort = process.env.REACT_APP_WS_PORT || '58000';
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsBaseUrl = `${wsProtocol}//${wsHost}:${wsPort}`;
+    const wsUrl = `${wsBaseUrl}/ws/cv/camera/${config.zoneId}/`;
+
+    const ws = new WebSocket(`${wsUrl}/`);
     wsRef.current = ws;
 
     ws.onopen = () => {
