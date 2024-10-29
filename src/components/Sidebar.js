@@ -17,7 +17,7 @@ import {
   FiberManualRecord as BulletIcon, Spa as SiteIcon,
   AccountCircle, Settings, ExitToApp, GolfCourse, GolfCourseOutlined,
   GolfCourseRounded, GolfCourseSharp, GolfCourseTwoTone, SportsGolf,
-  Foundation, Pool, HotTub, Dining, Deck, Liquor,
+  Foundation, Pool, HotTub, Dining, Deck, Liquor, CameraOutdoor,
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 import SiteMenu from './SiteMenu';
@@ -29,6 +29,8 @@ import smartgrowLogoFull from '../assets/smartgrow_logo_full.png';
 import smartgrowLogoMin from '../assets/smartgrow_logo_min.png';
 import smartcourseLogoFull from '../assets/smartcourse_logo_full.png';
 import smartcourseLogoMin from '../assets/smartcourse_logo_min.png';
+import aEyeLogoFull from '../assets/a_eye_logo_full.png';
+import aEyeLogoMin from '../assets/a_eye_logo_min.png';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Menu from '@mui/material/Menu';
 import apiService from '../services/apiService';
@@ -146,6 +148,7 @@ const iconMap = {
   'Resort': Deck,
   'Dining': Dining,
   'Default': FolderIcon,
+  'CameraLocation1': CameraOutdoor
 };
 
 const SmallIcon = styled(({ component: Icon, ...props }) => <Icon {...props} />)(({ theme }) => ({
@@ -252,6 +255,10 @@ const Sidebar = forwardRef(({
     smartcourse: {
       full: smartcourseLogoFull,
       min: smartcourseLogoMin
+    },
+    a_eye: {
+      full: aEyeLogoFull,
+      min: aEyeLogoMin
     }
   };
   const { logout } = useAuth();
@@ -441,7 +448,7 @@ const Sidebar = forwardRef(({
                         const site = sites.find(f => f.id.toString() === value);
                         return site ? (
                           <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-                            <SportsGolf style={{ marginRight: '8px', color: muiTheme.palette.primary.contrastText }} />
+                            <CameraOutdoor style={{ marginRight: '8px', color: muiTheme.palette.primary.contrastText }} />
                             <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                               <Typography variant="body2" style={{ color: muiTheme.palette.primary.contrastText }}>{site.name}</Typography>
                               <Typography variant="caption" style={{ color: muiTheme.palette.primary.contrastText }}>
@@ -678,7 +685,7 @@ const Sidebar = forwardRef(({
               <ListItem sx={{ justifyContent: 'center', mt: 2 }}>
                 <img 
                   src={isOpen ? logos[brand].full : logos[brand].min}
-                  alt={`${brand === 'smartgrow' ? 'SmartGrow' : 'SmartCourse'} Logo`} 
+                  alt={`${brand === 'smartgrow' ? 'SmartGrow' : brand === 'smartcourse' ? 'SmartCourse' : 'A Eye'} Logo`}
                   style={{
                     maxWidth: isOpen ? '200px' : '40px',
                     height: 'auto',

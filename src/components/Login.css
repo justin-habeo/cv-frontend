@@ -1,19 +1,21 @@
+// Modified Login.css
 .login-container {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   min-height: 100vh !important;
-  background-color: white !important;
+  background-color: #1b201c !important; 
   padding: 2rem !important;
 }
 
 .login-form-container {
-  background-color: #2C7873;
+  background-color: #1b201c; 
   padding: 3rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 400px;
+  border: 1px solid rgba(122, 199, 215, 0.1);  
 }
 
 .logo {
@@ -25,7 +27,7 @@
 
 .tagline {
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
 }
 
@@ -36,14 +38,18 @@
 
 .remember-me {
   margin-bottom: 1.5rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .login-button {
   margin-top: 1rem;
-  background-color: white !important;
-  color: #2C7873 !important;
+  background-color: #7AC7D7 !important; 
+  color: #1b201c !important;  
   padding: 0.75rem 0 !important;
+  font-weight: 500 !important;
+  &:hover {
+    background-color: #A6E4E7 !important;  
+  }
 }
 
 .forgot-password {
@@ -52,16 +58,11 @@
 }
 
 .forgot-password a {
-  color: white;
+  color: #7AC7D7;  
   text-decoration: none;
 }
 
 .forgot-password a:hover {
+  color: #A6E4E7;  
   text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .login-form-container {
-    padding: 2rem 1.5rem;
-  }
 }

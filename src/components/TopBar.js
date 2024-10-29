@@ -99,6 +99,7 @@ function TopBar({ onToggle, isSidebarVisible, groupName, dashboardName, dashboar
             <MenuItem value="light">Light</MenuItem>
             <MenuItem value="purple">Purple</MenuItem>
             <MenuItem value="ombria">Ombria</MenuItem>
+            <MenuItem value="compVision">Computer Vision</MenuItem>
           </StyledSelect>
         </FormControl>
       )}
