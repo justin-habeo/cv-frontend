@@ -296,13 +296,14 @@ function DashboardDesigner({ selectedDashboard, selectedSite, isSidebarOpen, sid
         >
           Refresh Dashboard
         </StyledButton>
+        
         <StyledButton 
           onClick={toggleBrand} 
           variant="contained" 
           color="primary"
           size="small"
         >
-          Switch to {brand === 'smartgrow' ? 'SmartCourse' : 'SmartGrow'}
+          Switch to {brand === 'smartgrow' ? 'SmartMode' : 'SmartMode'}
         </StyledButton>
       </Box>
       <Box sx={{ 
