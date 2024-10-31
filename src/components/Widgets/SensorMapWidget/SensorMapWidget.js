@@ -219,7 +219,7 @@ function SensorMapWidget({ config, isDesignMode, updateConfig, showHeader }) {
   };
 
   const renderInfoWindowContent = (sensor) => (
-    <div style={{ padding: '10px', maxWidth: '200px' }}>
+    <div style={{ padding: '10px', maxWidth: '200px', color: 'black' }}>
       <h3 style={{ margin: '0 0 10px 0' }}>{sensor.name}</h3>
       <p style={{ margin: '5px 0' }}>Latitude: {sensor.latitude}</p>
       <p style={{ margin: '5px 0' }}>Longitude: {sensor.longitude}</p>

@@ -18,7 +18,7 @@ const WidgetWrapper = ({ title, children, onMoreClick, showHeader = true }) => {
       >
         {showHeader && (
           <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-            <Typography variant="h6" component="h2">
+            <Typography variant="h6" component="h2" color="black">
               {title}
             </Typography>
             <IconButton onClick={onMoreClick} size="small">
